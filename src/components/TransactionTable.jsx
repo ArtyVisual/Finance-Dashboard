@@ -91,7 +91,6 @@ const TransactionTable = ({ role, limit }) => {
                     <button className='border px-3 py-2 rounded hidden xl:block' onClick={handleExport}>
                         <FaFileExport />
                     </button>
-
                 </div>
             </div>
 
