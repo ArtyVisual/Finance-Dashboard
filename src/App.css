@@ -1,0 +1,200 @@
+:root {
+  --bg-main: #f5f7fb;
+  --bg-card: #ffffff;
+  --text-primary: #1e293b;
+  --text-secondary: #64748b;
+  --accent: #3b82f6;
+  --positive: #22c55e;
+  --negative: #ef4444;
+}
+
+.dark {
+  --bg-main: #0f172a;
+  --bg-card: #1e293b;
+  --text-primary: #f1f5f9;
+  --text-secondary: #94a3b8;
+  --accent: #60a5fa;
+  --positive: #4ade80;
+  --negative: #f87171;
+}
+
+button {
+  cursor: pointer;
+}
+
+
+@media only screen and (max-width:1000px) {
+  body :is(p, label, span, div, b, a, button, li) {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+
+body {
+  background-color: var(--bg-main);
+  color: var(--text-primary);
+  transition: all 0.3s ease;
+}
+
+/* Scrollbar Styling */
+
+/* For Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-main);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--text-secondary);
+  border-radius: 10px;
+  transition: background 0.3s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
+
+/* Backgrounds */
+.bg-main {
+  background-color: var(--bg-main);
+}
+
+.bg-card {
+  background-color: var(--bg-card);
+}
+
+/* Text */
+.text-primary {
+  color: var(--text-primary);
+}
+
+.text-secondary {
+  color: var(--text-secondary);
+}
+
+/* Status */
+.text-positive {
+  color: var(--positive);
+}
+
+.text-negative {
+  color: var(--negative);
+}
+
+/* Accent */
+.text-accent {
+  color: var(--accent);
+}
+
+.main-container {
+  height: calc(100vh - 70px);
+  overflow: auto;
+}
+
+.custom-select {
+  padding: 8px 40px 8px 12px;
+  /* right padding for arrow space */
+  border-radius: 5px;
+  border: 1px solid var(--text-primary);
+  background-color: var(--bg-card);
+  color: var(--text-primary);
+
+  appearance: none;
+  /* remove default arrow */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  position: relative;
+}
+
+.custom-select.small {
+  padding: 4px 40px 4px 12px;
+}
+
+a {
+  color: var(--text-secondary) !important;
+}
+
+a:hover {
+  color: var(--accent) !important;
+}
+
+a.active {
+  color: var(--text-primary) !important;
+}
+
+
+body .swal2-container {
+    height: 100%;
+    width: 100% !important;
+    overflow: hidden !important;
+    padding: 0;
+    background-color: rgba(52, 52, 52, 0.511) !important;
+}
+
+.swal2-popup.swal2-toast {
+    min-width: 300px;
+    max-width: 350px
+}
+
+.main-table {
+  max-height: calc(100vh - 227px);
+  overflow: auto;
+}
+
+.main-table table {
+  min-width: 500px;
+}
+
+.main-table table thead {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--bg-card)
+}
+
+.recharts-tooltip-label {
+  color: var(--accent);
+}
+
+.sidemenu {
+  transition: all 0.4s ease;
+}
+
+/* Smooth base transition */
+.transition-smooth {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Hover Lift Effect */
+.hover-lift {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-lift:hover {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0px 1px 10px var(--text-primary);
+}
+
+/* Slide from Left */
+.slide-left {
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.slide-left.open {
+  transform: translateX(0);
+}
+
+button {
+  transition: transform 0.15s ease !important;
+}
+
+button:hover {
+  transform: scale(0.95) !important;
+}
+
