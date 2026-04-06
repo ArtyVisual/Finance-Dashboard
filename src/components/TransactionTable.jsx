@@ -42,16 +42,22 @@ const TransactionTable = ({ role, limit }) => {
 
             <div className="flex justify-between flex-col xl:flex-row">
 
-                <h2 className="text-2xl mb-4 font-semibold">
-                    Transactions
-                </h2>
+                <div className="flex justify-between align-baseline mb-4">
+                    <h2 className="text-2xl font-semibold">
+                        Transactions
+                    </h2>
+
+                    <button className='border px-3 py-2 rounded xl:hidden' onClick={handleExport}>
+                        <FaFileExport />
+                    </button>
+                </div>
 
                 <div className="flex mb-7 gap-2">
                     {/* Search */}
                     <input
                         type="text"
                         placeholder="Search..."
-                        className="border px-3 py-2 rounded w-full max-w-xs bg-card text-primary"
+                        className="border px-3 py-2 rounded w-25 max-w-xs bg-card text-primary"
                         onChange={(e) => setSearch(e.target.value)}
                     />
 
@@ -68,10 +74,11 @@ const TransactionTable = ({ role, limit }) => {
                         <span className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-secondary">
                             ▼
                         </span>
+                        
                     </div>
 
                     {limit && (
-                        <div className="border px-3 py-2 rounded bg-card text-primary w-50 text-center">
+                        <div className="border px-3 py-2 rounded bg-card text-primary w-25 text-center">
                             <NavLink
                                 to="/transactions"
                                 className="text-sm"
@@ -80,10 +87,11 @@ const TransactionTable = ({ role, limit }) => {
                             </NavLink>
                         </div>
                     )}
-
-                    <button className='border px-3 py-2 rounded' onClick={handleExport}>
+                    
+                    <button className='border px-3 py-2 rounded hidden xl:block' onClick={handleExport}>
                         <FaFileExport />
                     </button>
+
                 </div>
             </div>
 

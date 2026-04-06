@@ -23,11 +23,21 @@ button {
 }
 
 
-@media only screen and (max-width:1000px) {
+@media only screen and (max-width: 500px) {
   body :is(p, label, span, div, b, a, button, li) {
     font-weight: 400;
     font-size: 12px;
     line-height: 15px;
+  }
+
+  .main-table {
+    max-height: calc(100vh - 227px);
+    max-width: calc(100vw - 100px) ;
+    overflow: auto;
+  }
+
+  .main-table table{
+    min-width: 400px;
   }
 }
 
@@ -129,25 +139,21 @@ a.active {
 
 
 body .swal2-container {
-    height: 100%;
-    width: 100% !important;
-    overflow: hidden !important;
-    padding: 0;
-    background-color: rgba(52, 52, 52, 0.511) !important;
+  height: 100%;
+  width: 100% !important;
+  overflow: hidden !important;
+  padding: 0;
+  background-color: rgba(52, 52, 52, 0.511) !important;
 }
 
 .swal2-popup.swal2-toast {
-    min-width: 300px;
-    max-width: 350px
+  min-width: 300px;
+  max-width: 350px
 }
 
 .main-table {
   max-height: calc(100vh - 227px);
   overflow: auto;
-}
-
-.main-table table {
-  min-width: 500px;
 }
 
 .main-table table thead {
@@ -197,4 +203,3 @@ button {
 button:hover {
   transform: scale(0.95) !important;
 }
-
