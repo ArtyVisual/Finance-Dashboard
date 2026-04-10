@@ -22,6 +22,12 @@ button {
   cursor: pointer;
 }
 
+.layout{
+   width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
 
 body {
   width: 100vw;
@@ -196,12 +202,12 @@ button:hover {
   }
 
   .main-container {
-    height: calc(100vh - 25px);
+    height: calc(100vh - 50px);
   }
 
   .main-table {
     max-height: calc(100vh - 227px);
-    max-width: calc(100vw - 60px) ;
+    max-width: calc(100vw - 32px) ;
     overflow: auto;
   }
 

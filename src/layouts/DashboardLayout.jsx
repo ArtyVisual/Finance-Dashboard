@@ -36,7 +36,7 @@ const DashboardLayout = ({ children, role, setRole }) => {
   };
 
   return (
-    <div className="flex min-h-screen bg-main">
+    <div className="flex min-h-screen bg-main layout">
 
       {/* Sidebar */}
       <aside className="w-64 bg-card shadow-md hidden md:block">
@@ -136,7 +136,7 @@ const DashboardLayout = ({ children, role, setRole }) => {
       <div className="flex-1 flex flex-col">
 
         {/* Header */}
-        <header className="bg-card shadow px-6 py-4 flex justify-between items-center">
+        <header className="bg-card shadow px-2 sm:px-6 py-2 sm:py-4 flex justify-between items-center">
 
 
           <div className="text-lg font-semibold text-primary capitalize">
@@ -192,7 +192,7 @@ const DashboardLayout = ({ children, role, setRole }) => {
         </header>
 
         {/* Content */}
-        <main className="main-container p-6 space-y-6">
+        <main className="main-container p-2 sm:p-6 space-y-6">
           {React.cloneElement(children, { role })}
         </main>
 

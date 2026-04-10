@@ -18,7 +18,7 @@ const data = [
 
 const LineChartComponent = () => {
   return (
-    <div className="bg-card p-5 rounded-2xl shadow-sm h-80 pb-10 hover-lift">
+    <div className="bg-card sm:p-5 p-2 rounded-2xl shadow-sm h-80 pb-10 hover-lift">
       <h2 className="text-primary mb-4 font-semibold">
         Income vs Expenses
       </h2>

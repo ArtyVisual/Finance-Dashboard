@@ -3,7 +3,7 @@ import { FaArrowUp, FaArrowDown } from "react-icons/fa";
 
 const StatCard = ({ title, amount, change, isPositive }) => {
     return (
-        <div className="bg-card p-5 rounded-2xl shadow-sm hover:shadow-md transition hover-lift ">
+        <div className="bg-card p-1 rounded-2xl shadow-sm hover:shadow-md transition hover-lift ">
 
             <p className="text-sm text-secondary">{title}</p>
 
