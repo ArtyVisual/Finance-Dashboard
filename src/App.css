@@ -23,25 +23,9 @@ button {
 }
 
 
-@media only screen and (max-width: 500px) {
-  body :is(p, label, span, div, b, a, button, li) {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 15px;
-  }
-
-  .main-table {
-    max-height: calc(100vh - 227px);
-    max-width: calc(100vw - 100px) ;
-    overflow: auto;
-  }
-
-  .main-table table{
-    min-width: 500px;
-  }
-}
-
 body {
+  width: 100vw;
+  height: 100vh;
   background-color: var(--bg-main);
   color: var(--text-primary);
   transition: all 0.3s ease;
@@ -106,7 +90,7 @@ body {
 }
 
 .custom-select {
-  padding: 8px 40px 8px 12px;
+  padding: 8px 30px 8px 12px;
   /* right padding for arrow space */
   border-radius: 5px;
   border: 1px solid var(--text-primary);
@@ -202,4 +186,31 @@ button {
 
 button:hover {
   transform: scale(0.95) !important;
+}
+
+@media only screen and (max-width: 500px) {
+  body :is(p, label, span, div, b, a, button, li) {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .main-container {
+    height: calc(100vh - 25px);
+  }
+
+  .main-table {
+    max-height: calc(100vh - 227px);
+    max-width: calc(100vw - 60px) ;
+    overflow: auto;
+  }
+
+  .main-table table{
+    min-width: 500px;
+  }
+
+  .custom-select {
+    padding: 10px 12px;
+  }
+
 }

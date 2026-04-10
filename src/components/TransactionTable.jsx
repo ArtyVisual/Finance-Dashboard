@@ -52,7 +52,7 @@ const TransactionTable = ({ role, limit }) => {
                     </button>
                 </div>
 
-                <div className="flex mb-7 gap-2">
+                <div className="flex mb-7 gap-2 justify-between">
                     {/* Search */}
                     <input
                         type="text"
