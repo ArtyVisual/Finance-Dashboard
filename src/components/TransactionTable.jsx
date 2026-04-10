@@ -38,7 +38,7 @@ const TransactionTable = ({ role, limit }) => {
     };
 
     return (
-        <div className="bg-card sm:p-5 p-2 rounded-2xl shadow-sm">
+        <div className="bg-card sm:p-5 p-3 rounded-2xl shadow-sm">
 
             <div className="flex justify-between flex-col xl:flex-row">
 
@@ -47,7 +47,7 @@ const TransactionTable = ({ role, limit }) => {
                         Transactions
                     </h2>
 
-                <button className='border px-3 py-2 rounded xl:hidden' onClick={handleExport}>
+                    <button className='border px-3 py-2 rounded xl:hidden' onClick={handleExport}>
                         <FaFileExport />
                     </button>
                 </div>

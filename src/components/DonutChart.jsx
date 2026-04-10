@@ -11,7 +11,7 @@ const COLORS = ["#3b82f6", "#22c55e", "#f59e0b", "#ef4444"];
 
 const DonutChart = () => {
   return (
-    <div className="bg-card p-2 sm:p-5  rounded-2xl shadow-sm h-80 hover-lift">
+    <div className="bg-card p-3 sm:p-5  rounded-2xl shadow-sm h-80 hover-lift">
       <h2 className="text-primary font-semibold">
         Spending Breakdown
       </h2>

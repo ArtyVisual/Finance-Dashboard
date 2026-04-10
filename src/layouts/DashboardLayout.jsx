@@ -136,7 +136,7 @@ const DashboardLayout = ({ children, role, setRole }) => {
       <div className="flex-1 flex flex-col">
 
         {/* Header */}
-        <header className="bg-card shadow px-2 sm:px-6 py-2 sm:py-4 flex justify-between items-center">
+        <header className="bg-card shadow px-3 sm:px-6 py-3 sm:py-4 flex justify-between items-center">
 
 
           <div className="text-lg font-semibold text-primary capitalize">
@@ -171,7 +171,7 @@ const DashboardLayout = ({ children, role, setRole }) => {
               />
             </button>
 
-            <div className="relative w-fit mr-2">
+            <div className="relative w-fit">
               <select
                 value={role}
                 onChange={(e) => setRole(e.target.value)}
@@ -192,7 +192,7 @@ const DashboardLayout = ({ children, role, setRole }) => {
         </header>
 
         {/* Content */}
-        <main className="main-container p-2 sm:p-6 space-y-6">
+        <main className="main-container p-3 py-4 sm:p-6 space-y-6">
           {React.cloneElement(children, { role })}
         </main>
 
