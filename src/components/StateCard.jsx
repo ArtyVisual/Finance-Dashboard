@@ -3,7 +3,7 @@ import { FaArrowUp, FaArrowDown } from "react-icons/fa";
 
 const StatCard = ({ title, amount, change, isPositive }) => {
     return (
-        <div className="bg-card p-1 rounded-2xl shadow-sm hover:shadow-md transition hover-lift ">
+        <div className="bg-card text-center sm:text-left p-2 rounded-2xl shadow-sm hover:shadow-md transition hover-lift ">
 
             <p className="text-sm text-secondary">{title}</p>
 
@@ -11,7 +11,7 @@ const StatCard = ({ title, amount, change, isPositive }) => {
                 {amount}
             </h2>
 
-            <div className="flex items-center mt-2 space-x-2">
+            <div className="flex flex-col sm:flex-row items-center mt-2 space-x-2">
                 <span
                     className={`flex items-center text-sm font-medium ${isPositive ? "text-positive" : "text-negative"
                         }`}

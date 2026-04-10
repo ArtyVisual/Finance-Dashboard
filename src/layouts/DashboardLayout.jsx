@@ -171,7 +171,7 @@ const DashboardLayout = ({ children, role, setRole }) => {
               />
             </button>
 
-            <div className="relative w-fit">
+            <div className="relative w-fit mr-2">
               <select
                 value={role}
                 onChange={(e) => setRole(e.target.value)}
