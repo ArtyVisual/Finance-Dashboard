@@ -152,11 +152,11 @@ const DashboardLayout = ({ children, role, setRole }) => {
             </span>
           </div>
 
-          <div className="flex items-center gap-3">
+          <div className="flex items-center sm:gap-3 gap-2">
 
             <button
               onClick={() => setDarkMode(!darkMode)}
-              className={`relative w-14 h-7 flex items-center rounded-full p-1 transition duration-300 
+              className={`relative w-12 h-6 sm:w-14 sm:h-7 flex items-center rounded-full p-1 transition duration-300 
                 ${darkMode ? "bg-slate-700" : "bg-yellow-400"}
               `}
             >
@@ -165,8 +165,8 @@ const DashboardLayout = ({ children, role, setRole }) => {
 
               {/* Toggle Knob */}
               <div
-                className={`w-5 h-5 bg-white rounded-full shadow-md transform transition duration-300
-                  ${darkMode ? "translate-x-7" : "translate-x-0"}
+                className={`w-4 h-4 sm:w-5 sm:h-5  bg-white rounded-full shadow-md transform transition duration-300
+                  ${darkMode ? "sm:translate-x-7 translate-x-6" : "translate-x-0"}
                 `}
               />
             </button>

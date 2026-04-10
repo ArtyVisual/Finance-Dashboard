@@ -207,7 +207,7 @@ button:hover {
 
   .main-table {
     max-height: calc(100vh - 227px);
-    max-width: calc(100vw - 58px) ;
+    max-width: calc(100vw - 52px) ;
     overflow: auto;
   }
 
