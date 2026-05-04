@@ -41,8 +41,8 @@ const DashboardLayout = ({ children, role, setRole }) => {
       {/* Sidebar */}
       <aside className="w-64 bg-card shadow-md hidden md:block">
         <div className="p-5 text-center ">
-          <span className="text-xl font-bold text-center text-primary pe-1">Zorvyn</span>
-          <span className="text-secondary">Fintech</span>
+          <span className="text-xl font-bold text-center text-primary pe-1">Cash</span>
+          <span className="text-secondary">Flow</span>
         </div>
 
         <nav className="p-4 space-y-2">
@@ -90,9 +90,9 @@ const DashboardLayout = ({ children, role, setRole }) => {
               <div>
 
                 <span className="text-xl font-bold text-primary pe-1">
-                  Zorvyn
+                  Cash
                 </span>
-                <span className="text-secondary">Fintech</span>
+                <span className="text-secondary">Flow</span>
               </div>
 
               <button
